@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Natal</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="image/logo.png" type="image/png"> 
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><img src="image/icon/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">INFO</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+        <ul>
+            <li><img src="image/logo.png" style="width: 45px; height: 45px;" alt=""><a href="#">PD SMANSATA</a></li>
+            <li class="hideOnMobile"><a href="#home">HOME</a></li>
+            <li class="hideOnMobile"><a href="#">INFO</a></li>
+            <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+            <li onclick="showSidebar()" class="menu-button"><a href="#"><img src="image/icon/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="menu"></a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home_utama">
+        <h4>Kepada Bapak/Ibu Tamu Undangan Beserta Siswa/I PD SMANSATA</h3>
+        <h1>NATAL PD SMANSATA</h1>
+        <p>Akan melangsungkan acara dalam:</p>
+        <div class="countdown">
+            <div>
+                <p id="days">00</p>
+                <span>Hari</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Jam</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Menit</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Detik</span>
+            </div>
+        </div>
+        <p style="margin-bottom: 20px;">Lebih Tepatnya:</p>
+            <h3>
+                <i class="bi bi-calendar-check-fill"></i>
+                Hari/Tanggal: Jumat, 12 Desember 2025 <br />
+                <i class="bi bi-clock-fill"></i>
+                Pukul : 18.00 - 20.20 WITA <br />
+                <i class="bi bi-geo-alt-fill"></i>
+                Tempat: GEREJA GPSDI IMANUEL 1 TARAKAN
+            </h3>
+            <p>
+                Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang
+                Bapak/Ibu Tamu Undangan dan Siswa/i,<br />untuk hadir pada acara NATAL PD SMANSATA.
+            </p>
+    </section>
+    <h1>Test</h1>
+    <h1>aa</h1>
+    <h1>bbb</h1>
+
+    <!-- SCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="snow.js"></script>
+</body>
+</html>

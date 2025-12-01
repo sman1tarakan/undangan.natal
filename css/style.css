@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #fdc019;    /* Merah Crimson */
+    --bg: #6b1313;         /* Cream/Beige Lembut - Akan menjadi warna latar dominan */
+    --text-color: #ffffff; /* Abu-abu Gelap untuk keterbacaan */
+    --second: #D4AF37;     /* Emas Metalik - Untuk aksen dan tombol */
+}
+
+body{
+    min-height: 100vh;
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3);
+  }
+}
