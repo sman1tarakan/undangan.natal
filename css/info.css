@@ -1,0 +1,99 @@
+.info_acara{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(81, 3, 3);
+  color: var(--text-color);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.info_acara h2 {
+  color: var(--white);
+  font-family: "Mountains of Christmas", serif;
+  font-size: 5rem;
+}
+
+.dresscode {
+  max-width: 56.25rem;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  background-color: rgba(45, 42, 42, 0.6);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dresscode h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.grid {
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #f3f3f3;
+  font-family: "efco", Georgia, serif;
+}
+
+.info_lokasi{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: var(--text-color);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.info_lokasi h2 {
+  color: var(--white);
+  font-family: "Mountains of Christmas", serif;
+  font-size: 5rem;
+}
+
+.info_lokasi iframe {
+  width: 90%; /* atur lebar menjadi 90% dari kontainer */
+  max-width: 700px; /* batasi lebar maksimalnya */
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+  padding-bottom: 30px;
+}
+
+.info_lokasi a.btn {
+  background-color: rgba(243, 0, 0, 0.888);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.info_lokasi a.btn:hover {
+  background-color: #9d4c4c;
+}
