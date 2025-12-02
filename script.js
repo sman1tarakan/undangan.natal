@@ -30,3 +30,38 @@ const countdownInterval = setInterval(() => {
       "<h2 class='highlighted-text'>Puncak HUT-60 Telah Dimulai</h2>";
   }
 }, 1000);
+
+// AUDIO
+document.addEventListener("click", () => {
+  const song = document.getElementById("song");
+  song.muted = false;
+  song.play();
+});
+
+if (countdownInterval > 0) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const song = document.getElementById("song");
+
+    // Tampilkan popup
+    popup.style.display = "flex";
+
+    // Mulai audio
+    song.muted = false;
+    song.play().catch(() => {
+      console.log("Audio autoplay diblokir, tunggu interaksi.");
+    });
+
+    // Tutup popup saat klik "Lanjutkan"
+    document.getElementById("closePopup").addEventListener("click", () => {
+      popup.style.display = "none";
+      launchConfetti();
+    });
+  });
+} else {
+  // Mulai audio
+  song.muted = false;
+  song.play().catch(() => {
+    console.log("Audio autoplay diblokir, tunggu interaksi.");
+  });
+}

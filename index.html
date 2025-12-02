@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="icon" href="image/logo.png" type="image/png"> 
     
     <link
@@ -101,11 +102,31 @@
             <p style="margin-bottom: 1.5rem;">Alamat : GEREJA GPSDI IMANUEL 1 TARAKAN</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248.94245986901078!2d117.5771128!3d3.3305713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32147568e1fd910d%3A0xe1554b490181d821!2sGereja%20GPSDI%20IMANUEL%201TARAKAN!5e0!3m2!1sid!2sid!4v1764641563649!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <a
-                href="https://maps.app.goo.gl/JbiPjVTQJRWC8gTR8"
+                href="https://maps.app.goo.gl/b1Bv7PvKPKNeVd6y6?g_st=aw"
                 target="_blank"
                 class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
         </section>
     </section>
+
+    <!-- AUDIO -->
+    <div id="audio-container">
+      <audio id="song" preload="auto" autoplay muted loop>
+        <source src="sound/backsound.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>🎉 Selamat Datang!</h2>
+        <p>Acara akan segera dimulai. Silahkan klik lanjutkan!</p>
+        <button id="closePopup" class="btn-lanjutkan">Lanjutkan</button>
+      </div>
+    </div>
 
     <!-- SCRIPT -->
      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
